@@ -1,0 +1,133 @@
+.check__boxes {
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: #6C55F7 solid 9px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column; /* Выстраиваем элементы вертикально */
+}
+
+/* Оболочка шкалы */
+.progress-wrapper {
+    width: 100%;
+    height: 38px;
+    background: #C1E6FF;
+    background: radial-gradient(circle,rgba(193, 230, 255, 0.4) 22%, rgba(130, 169, 212, 0.4) 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative; /* Важно для абсолютного позиционирования текста */
+    margin-bottom: 20px; /* Отступ от шкалы до первого чекбокса */
+    margin-top: 16px;
+}
+
+/* Заполняющаяся цветная плашка */
+.progress-bar {
+    height: 100%;
+    width: 0%; /* Меняется через JS */
+    background: #00FF37;
+    background: radial-gradient(circle,rgba(0, 255, 55, 0.5) 20%, rgba(32, 197, 68, 0.5) 92%);
+    transition: width 0.3s ease;
+}
+
+/* Текст с процентами — ВСЕГДА ПО ЦЕНТРУ */
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Идеальное центрирование */
+    color: #EBE9FC;
+    font-size: 25px;
+    font-family: sans-serif;
+    pointer-events: none; /* Чтобы текст не мешал кликам, если что */
+}
+
+/* Текстовый счетчик снизу */
+.progress-counter {
+    text-align: center;
+    margin-top: 20px; /* Отступ от последнего чекбокса до счетчика */
+    font-size: 32px;
+    font-weight: bold;
+    color: #EBE9FC;
+    font-family: sans-serif;
+}
+
+/* Ваши остальные стили для label и чекбоксов остаются без изменений */
+.check__boxes label {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 30px;
+    line-height: 1.4;
+    cursor: pointer;
+    padding: 8px 0;
+    transition: background 0.2s;
+}
+.check__boxes label:hover {
+    background: #453d73;
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0 -8px;
+}
+.real-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.custom-checkbox {
+    flex-shrink: 0;
+    width: 39px;
+    height: 39px;
+    border-radius: 9px;
+    background-color: #C7C1EB;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #150A33 solid 2px;
+}
+.custom-checkbox::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 21px;
+    background-image: url('../IMG/shape.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.real-checkbox:checked + .custom-checkbox::before {
+    opacity: 1;
+}
+
+.check__boxes label {
+    font-size: 25px;
+}
+
+.real-checkbox:checked ~ .checkbox-text {
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: color 0.2s, text-decoration 0.2s;
+}
+
+.header-check {
+    font-size: 50px;
+    color: #EBE9FC;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 60px;
+    margin-left: 30px;
+    text-align: center;
+}
+

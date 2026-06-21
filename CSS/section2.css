@@ -1,0 +1,226 @@
+.plugins {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    margin-top: 64px;
+}
+
+.info__plugin {
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    padding: 40px 50px 50px 20px;
+    border-radius: 40px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.item-text {
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    padding: 18px 16px;
+    border-radius: 21px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.item-header {
+    font-size: 28px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.info__plugin-1 {
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    padding: 40px 30px 50px 30px;
+    border-radius: 40px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.item-header-1 {
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+.plugins-1 {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 104px;
+}
+
+#item-password {
+    text-align: center;
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    padding: 36px 29px;
+    border-radius: 70px;
+    font-size: 38px;
+    color: #09FF63;
+}
+
+.plugins__container-1 {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 40px;
+}
+
+.info__plugin {
+    display: block;
+}
+
+.item-header-text {
+    margin-left: 0px;
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    padding: 36px 29px;
+    border-radius: 40px;
+    flex: 1;
+    font-size: 28px;
+}
+
+.item-header-green {
+    color: #09FF63;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.item-header-purple {
+    color: #8187F9;
+    font-size: 25px;
+    margin-left: 0px;
+}
+
+.container__collums {
+    display: flex;
+    gap: 78px;
+    align-items: flex-start;
+    margin: 0 110px 0 110px;
+}
+
+.collum__in {
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    padding: 40px 40px 50px 40px;
+    border-radius: 40px;
+    margin-top: 80px;
+    flex: 1;
+}
+
+#no_padding {
+    padding-bottom: 0px;
+}
+
+.item-header-text-1 {
+    margin-left: 0px;
+}
+
+.item-text-1 {
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    padding: 18px 16px;
+    border-radius: 21px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.collum__in-info {
+    display: flex;
+    gap: 15px;
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    border-radius: 30px;
+    padding: 21px 13px;
+    align-items: center;
+    margin-top: 24px;
+    border: #C53139 solid 2px;
+}
+
+#collum__in-no {
+    flex: none;
+    background: none;
+    padding: 0px;
+}
+
+#container__collums-no {
+    align-items: center;
+}
+
+#collum__in-info-no {
+    border: #33CC33 solid 2px;
+    margin-top: 32px;
+}
+
+#item-header-text-1-no {
+    margin-right: 40px;
+}
+
+#collum__in-info-text-no {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+#container-no {
+    padding-bottom: 0px;
+}
+
+.item-header-green-1 {
+    color: #33CC33;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#collum__in-no-1 {
+    padding: 30px 40px 30px 20px;
+    border: #33CC33 solid 2px;
+}
+
+.item-no {
+    gap: 20px;
+}
+
+.item-text-1-no {
+    font-weight: 400;
+    font-size: 23px;
+}
+
+#collum__in-no-2 {
+    padding: 30px 40px 30px 20px;
+    border: #C53139 solid 2px;
+}
+
+.item-header-green-2 {
+    color: #C53139;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#foot__container {
+    display: flex;
+    align-items: center;
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 50px;
+    border-radius: 40px;
+    margin-top: 100px;
+}
+
+#text__container-foot {
+    text-align: center;
+    font-size: 32px;
+}

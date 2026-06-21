@@ -1,0 +1,150 @@
+#mistakes {
+    margin-top: 70px;
+}
+
+.string-mistake {
+    display: flex;
+    gap: 38px;
+    margin-bottom: 38px;
+}
+
+.colum-mistake {
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    border-radius: 33px;
+    border: #8A4FFF solid 4px;
+    flex: 1;
+    padding: 22px 26px 26px 26px;
+}
+
+.number-heder {
+    display: flex;
+    align-items: center;
+}
+
+.number-mistake {
+    color: #C53139;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header-mistake {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 0px 0px 30px;
+}
+
+.text-mistake {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.header-mistake-no {
+    padding: 0px 30px 0px 0px;
+}
+
+.header-mistake-no-1 {
+    padding: 0px 0px 0px 50px;
+}
+
+.info-plugin {
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    border-radius: 42px;
+    display: flex;
+    align-items: center;
+    padding: 18px 18px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.text-info-plugin {
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.text-under-plugin {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.plugin-under-plugin {
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    border-radius: 33px;
+    font-size: 25px;
+    color: #fff;
+    padding: 30px 35px 35px 35px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#text-margin-no {
+    margin: 0px;
+}
+
+.collum__block {
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    border-radius: 33px;
+    padding: 54px 76px 38px 76px;
+    margin-top: 100px;
+}
+
+.collum__block-in {
+    display: flex;
+    align-items: flex-start;
+    gap: 42px;
+    margin-top: 40px;
+}
+
+.numbers-in-collum {
+    background: #1F841F;
+    padding: 23px 32px;
+    font-size: 30px;
+    border-radius: 140px;
+    text-align: center;
+    color: #EBE9FC;
+}
+
+.header__in-collum__block {
+    font-size: 48px;
+    text-align: center;
+    color: #EBE9FC;
+}
+
+.plugin__text {
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    font-size: 30px;
+    border-radius: 33px;
+    padding: 28px 44px;
+    line-height: 28px;
+    margin-bottom: 46px;
+}
+
+.stick {
+    width: 3px;
+    background-color: #1F841F;
+    margin: 3px auto;
+    border-radius: 14px;
+}
+
+.stick-1 {
+    height: 42px;
+}
+
+.stick-2 {
+    height: 44px;
+}
+
+.stick-3 {
+    height: 42px;
+}
+
+.stick-4 {
+    height: 52px;
+}

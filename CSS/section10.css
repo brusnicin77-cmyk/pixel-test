@@ -1,0 +1,35 @@
+#img-question {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.title__container-margin {
+    padding-top: 40px;
+}
+
+.start-test {
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    border-radius: 36px;
+    border: #6C55F7 solid 9px;
+    color: #C7C1EB;
+    font-size: 30px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 16px 140px;
+    transition: all 0.2s;
+}
+
+#bottom-test {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.info__container-test {
+    color: #fff;
+}
+
+.start-test:hover {
+    transform: scale(1.03);
+    color: #9c97b9;
+}
