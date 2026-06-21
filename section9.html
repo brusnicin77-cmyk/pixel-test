@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1536">
     <title>Pixel | Чек-листы</title>
     <link rel="stylesheet" href="CSS/style-section.css">
     <link rel="stylesheet" href="CSS/section9.css">
@@ -12,326 +12,332 @@
 <body>
     <script src="Script/scrollbar.js"></script>
     <script src="Script/checklist-progress.js"></script>
-    <aside class="sidebar">
-        <nav>
-            <img src="IMG/logo-aside.svg" class="logo-aside">
-            <ul>
-                <li><a href="index.html"><img src="IMG/index.png">Главная</a></li>
-                <li><a href="section1.html"><img src="IMG/section1.png">Основы безопасности</a></li>
-                <li><a href="section2.html"><img src="IMG/section2.png">Пароли</a></li>
-                <li><a href="section3.html"><img src="IMG/section3.png">Двухфакторная аутентификация</a></li>
-                <li class="subsection"><a href="section3.1.html" class="subsection__link"><img src="IMG/section3.1.png">Instagram</a></li>
-                <li class="subsection"><a href="section3.2.html" class="subsection__link"><img src="IMG/section3.2.png">VK</a></li>
-                <li class="subsection"><a href="section3.3.html" class="subsection__link"><img src="IMG/section3.3.png">Telegram</a></li>
-                <li class="subsection"><a href="section3.4.html" class="subsection__link"><img src="IMG/section3.4.png">MAX</a></li>
-                <li><a href="section4.html"><img src="IMG/section4.png">Мошенничество</a></li>
-                <li><a href="section5.html"><img src="IMG/section5.png">Приватность</a></li>
-                <li><a href="section6.html"><img src="IMG/section6.png">Устройства</a></li>
-                <li><a href="section7.html"><img src="IMG/section7.png">Взлом аккаунта</a></li>
-                <li><a href="section8.html"><img src="IMG/section8.png">Ошибки</a></li>
-                <li><a href="section9.html" class="sidebar__active-link"><img src="IMG/section9.png">Чек-листы</a></li>
-                <li><a href="section10.html"><img src="IMG/section10.png">Тест</a></li>
-                <li><a href="section11.html"><img src="IMG/section11.png">Рекомендации</a></li>
-            </ul>
-            <a href="#" id="about_project">О проекте</a>
-        </nav>
-    </aside>
 
-    <main>
-        <div class="container">
-            <div class="checklist">
-                <div class="header-check">
-                    <img src="IMG/check-1.png">
-                    <p>Защити аккаунт за 5 минут</p>
-                </div>
-                <div class="check__boxes" data-checklist-id="list-1">
-                    <div class="progress-wrapper">
-                        <div class="progress-bar" id="progressBar"></div>
-                        <div class="progress-text" id="progressText">0%</div>
+    <div id="page-wrapper">
+
+        <aside class="sidebar">
+            <nav>
+                <img src="IMG/logo-aside.svg" class="logo-aside">
+                <ul>
+                    <li><a href="index.html"><img src="IMG/index.png">Главная</a></li>
+                    <li><a href="section1.html"><img src="IMG/section1.png">Основы безопасности</a></li>
+                    <li><a href="section2.html"><img src="IMG/section2.png">Пароли</a></li>
+                    <li><a href="section3.html"><img src="IMG/section3.png">Двухфакторная аутентификация</a></li>
+                    <li class="subsection"><a href="section3.1.html" class="subsection__link"><img src="IMG/section3.1.png">Instagram</a></li>
+                    <li class="subsection"><a href="section3.2.html" class="subsection__link"><img src="IMG/section3.2.png">VK</a></li>
+                    <li class="subsection"><a href="section3.3.html" class="subsection__link"><img src="IMG/section3.3.png">Telegram</a></li>
+                    <li class="subsection"><a href="section3.4.html" class="subsection__link"><img src="IMG/section3.4.png">MAX</a></li>
+                    <li><a href="section4.html"><img src="IMG/section4.png">Мошенничество</a></li>
+                    <li><a href="section5.html"><img src="IMG/section5.png">Приватность</a></li>
+                    <li><a href="section6.html"><img src="IMG/section6.png">Устройства</a></li>
+                    <li><a href="section7.html"><img src="IMG/section7.png">Взлом аккаунта</a></li>
+                    <li><a href="section8.html"><img src="IMG/section8.png">Ошибки</a></li>
+                    <li><a href="section9.html" class="sidebar__active-link"><img src="IMG/section9.png">Чек-листы</a></li>
+                    <li><a href="section10.html"><img src="IMG/section10.png">Тест</a></li>
+                    <li><a href="section11.html"><img src="IMG/section11.png">Рекомендации</a></li>
+                </ul>
+                <a href="#" id="about_project">О проекте</a>
+            </nav>
+        </aside>
+
+        <main>
+            <div class="container">
+                <div class="checklist">
+                    <div class="header-check">
+                        <img src="IMG/check-1.png">
+                        <p>Защити аккаунт за 5 минут</p>
                     </div>
+                    <div class="check__boxes" data-checklist-id="list-1">
+                        <div class="progress-wrapper">
+                            <div class="progress-bar" id="progressBar"></div>
+                            <div class="progress-text" id="progressText">0%</div>
+                        </div>
 
-                    <label>
-                        <input type="checkbox" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Сменить слабый пароль</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Включить 2FA</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Проверить привязанный email</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Удалить неизвестные устройства</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Проверить настройки приватности</span>
-                    </label>
+                        <label>
+                            <input type="checkbox" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Сменить слабый пароль</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Включить 2FA</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Проверить привязанный email</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Удалить неизвестные устройства</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Проверить настройки приватности</span>
+                        </label>
 
-                    <div class="progress-counter" id="progressCounter">Выполнено: 0/5</div>
+                        <div class="progress-counter" id="progressCounter">Выполнено: 0/5</div>
+                    </div>
                 </div>
+
+                <div class="checklist">
+                    <div class="header-check">
+                        <img src="IMG/check-2.png">
+                        <p>Безопасность смартфона</p>
+                    </div>
+                    <div class="check__boxes" data-checklist-id="list-2">
+                        <div class="progress-wrapper">
+                            <div class="progress-bar" id="progressBar"></div>
+                            <div class="progress-text" id="progressText">0%</div>
+                        </div>
+
+                        <label>
+                            <input type="checkbox" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Установлен пароль или Face ID</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Включены обновления системы</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Приложения скачиваются только из официальных магазинов</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Не установлены подозрительные APK-файлы</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Включён поиск устройства</span>
+                        </label>
+
+                        <div class="progress-counter" id="progressCounter">Выполнено: 0/5</div>
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <div class="header-check">
+                        <img src="IMG/check-3.png">
+                        <p>Как распознать фишинг</p>
+                    </div>
+                    <div class="check__boxes" data-checklist-id="list-3">
+                        <div class="progress-wrapper">
+                            <div class="progress-bar" id="progressBar"></div>
+                            <div class="progress-text" id="progressText">0%</div>
+                        </div>
+
+                        <label>
+                            <input type="checkbox" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Проверен адрес сайта</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Нет ошибок и странных символов в ссылке</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Сообщение не требует срочных действий</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Никто не просит пароль или код</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Используется официальный сайт</span>
+                        </label>
+
+                        <div class="progress-counter" id="progressCounter">Выполнено: 0/5</div>
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <div class="header-check">
+                        <img src="IMG/check-4.png">
+                        <p>Безопасный профиль</p>
+                    </div>
+                    <div class="check__boxes" data-checklist-id="list-4">
+                        <div class="progress-wrapper">
+                            <div class="progress-bar" id="progressBar"></div>
+                            <div class="progress-text" id="progressText">0%</div>
+                        </div>
+
+                        <label>
+                            <input type="checkbox" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Профиль закрыт</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Скрыт номер телефона</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Ограничена отправка сообщений</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Удалены лишние подписчики</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Не опубликованы личные данные</span>
+                        </label>
+
+                        <div class="progress-counter" id="progressCounter">Выполнено: 0/5</div>
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <div class="header-check">
+                        <img src="IMG/check-5.png">
+                        <p>Если пришло подозрительное сообщение</p>
+                    </div>
+                    <div class="check__boxes" data-checklist-id="list-5">
+                        <div class="progress-wrapper">
+                            <div class="progress-bar" id="progressBar"></div>
+                            <div class="progress-text" id="progressText">0%</div>
+                        </div>
+
+                        <label>
+                            <input type="checkbox" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Не переходить по ссылке</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Не скачивать файлы</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Проверить отправителя</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Не сообщать коды подтверждения</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Пожаловаться на аккаунт</span>
+                        </label>
+
+                        <div class="progress-counter" id="progressCounter">Выполнено: 0/5</div>
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <div class="header-check">
+                        <img src="IMG/check-6.png">
+                        <p>Цифровые привычки</p>
+                    </div>
+                    <div class="check__boxes" data-checklist-id="list-6">
+                        <div class="progress-wrapper">
+                            <div class="progress-bar" id="progressBar"></div>
+                            <div class="progress-text" id="progressText">0%</div>
+                        </div>
+
+                        <label>
+                            <input type="checkbox" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Используются разные пароли</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Пароли меняются при необходимости</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Проверяются активные устройства</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Используется менеджер паролей</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Не сохраняются пароли на чужих устройствах</span>
+                        </label>
+
+                        <div class="progress-counter" id="progressCounter">Выполнено: 0/5</div>
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <div class="header-check">
+                        <img src="IMG/check-7.png">
+                        <p>После взлома аккаунта</p>
+                    </div>
+                    <div class="check__boxes" data-checklist-id="list-7">
+                        <div class="progress-wrapper">
+                            <div class="progress-bar" id="progressBar"></div>
+                            <div class="progress-text" id="progressText">0%</div>
+                        </div>
+
+                        <label>
+                            <input type="checkbox" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Сменить пароль</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Выйти со всех устройств</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Проверить почту и телефон</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Включить 2FA</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="checkbox-text">Сообщить друзьям о взломе</span>
+                        </label>
+
+                        <div class="progress-counter" id="progressCounter">Выполнено: 0/5</div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="checklist">
-                <div class="header-check">
-                    <img src="IMG/check-2.png">
-                    <p>Безопасность смартфона</p>
-                </div>
-                <div class="check__boxes" data-checklist-id="list-2">
-                    <div class="progress-wrapper">
-                        <div class="progress-bar" id="progressBar"></div>
-                        <div class="progress-text" id="progressText">0%</div>
-                    </div>
-
-                    <label>
-                        <input type="checkbox" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Установлен пароль или Face ID</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Включены обновления системы</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Приложения скачиваются только из официальных магазинов</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Не установлены подозрительные APK-файлы</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Включён поиск устройства</span>
-                    </label>
-
-                    <div class="progress-counter" id="progressCounter">Выполнено: 0/5</div>
-                </div>
+            <div class="bottom__navigation">
+                <div class="link__bottom-l"><a href="section8.html" class="link-text__bottom-l"><img src="IMG/arrow-l.png"><div><span class="next">Назад: </span><span>Ошибки</span></div></a></div>
+                <div class="link__bottom-r"><a href="section10.html" class="link-text__bottom-r"><div><span class="next">Далее: </span><span>Тест</span></div><img src="IMG/arrow-r.png"></a></div>
             </div>
+        </main>
 
-            <div class="checklist">
-                <div class="header-check">
-                    <img src="IMG/check-3.png">
-                    <p>Как распознать фишинг</p>
-                </div>
-                <div class="check__boxes" data-checklist-id="list-3">
-                    <div class="progress-wrapper">
-                        <div class="progress-bar" id="progressBar"></div>
-                        <div class="progress-text" id="progressText">0%</div>
-                    </div>
-
-                    <label>
-                        <input type="checkbox" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Проверен адрес сайта</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Нет ошибок и странных символов в ссылке</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Сообщение не требует срочных действий</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Никто не просит пароль или код</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Используется официальный сайт</span>
-                    </label>
-
-                    <div class="progress-counter" id="progressCounter">Выполнено: 0/5</div>
-                </div>
-            </div>
-
-            <div class="checklist">
-                <div class="header-check">
-                    <img src="IMG/check-4.png">
-                    <p>Безопасный профиль</p>
-                </div>
-                <div class="check__boxes" data-checklist-id="list-4">
-                    <div class="progress-wrapper">
-                        <div class="progress-bar" id="progressBar"></div>
-                        <div class="progress-text" id="progressText">0%</div>
-                    </div>
-
-                    <label>
-                        <input type="checkbox" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Профиль закрыт</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Скрыт номер телефона</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Ограничена отправка сообщений</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Удалены лишние подписчики</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Не опубликованы личные данные</span>
-                    </label>
-
-                    <div class="progress-counter" id="progressCounter">Выполнено: 0/5</div>
-                </div>
-            </div>
-
-            <div class="checklist">
-                <div class="header-check">
-                    <img src="IMG/check-5.png">
-                    <p>Если пришло подозрительное сообщение</p>
-                </div>
-                <div class="check__boxes" data-checklist-id="list-5">
-                    <div class="progress-wrapper">
-                        <div class="progress-bar" id="progressBar"></div>
-                        <div class="progress-text" id="progressText">0%</div>
-                    </div>
-
-                    <label>
-                        <input type="checkbox" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Не переходить по ссылке</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Не скачивать файлы</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Проверить отправителя</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Не сообщать коды подтверждения</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Пожаловаться на аккаунт</span>
-                    </label>
-
-                    <div class="progress-counter" id="progressCounter">Выполнено: 0/5</div>
-                </div>
-            </div>
-
-            <div class="checklist">
-                <div class="header-check">
-                    <img src="IMG/check-6.png">
-                    <p>Цифровые привычки</p>
-                </div>
-                <div class="check__boxes" data-checklist-id="list-6">
-                    <div class="progress-wrapper">
-                        <div class="progress-bar" id="progressBar"></div>
-                        <div class="progress-text" id="progressText">0%</div>
-                    </div>
-
-                    <label>
-                        <input type="checkbox" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Используются разные пароли</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Пароли меняются при необходимости</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Проверяются активные устройства</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Используется менеджер паролей</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Не сохраняются пароли на чужих устройствах</span>
-                    </label>
-
-                    <div class="progress-counter" id="progressCounter">Выполнено: 0/5</div>
-                </div>
-            </div>
-
-            <div class="checklist">
-                <div class="header-check">
-                    <img src="IMG/check-7.png">
-                    <p>После взлома аккаунта</p>
-                </div>
-                <div class="check__boxes" data-checklist-id="list-7">
-                    <div class="progress-wrapper">
-                        <div class="progress-bar" id="progressBar"></div>
-                        <div class="progress-text" id="progressText">0%</div>
-                    </div>
-
-                    <label>
-                        <input type="checkbox" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Сменить пароль</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Выйти со всех устройств</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Проверить почту и телефон</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Включить 2FA</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="coding-notes" class="real-checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="checkbox-text">Сообщить друзьям о взломе</span>
-                    </label>
-
-                    <div class="progress-counter" id="progressCounter">Выполнено: 0/5</div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="bottom__navigation">
-            <div class="link__bottom-l"><a href="section8.html" class="link-text__bottom-l"><img src="IMG/arrow-l.png"><div><span class="next">Назад: </span><span>Ошибки</span></div></a></div>
-            <div class="link__bottom-r"><a href="section10.html" class="link-text__bottom-r"><div><span class="next">Далее: </span><span>Тест</span></div><img src="IMG/arrow-r.png"></a></div>
-        </div>
-    </main>
+    </div>
+    <script src="Script/scale.js"></script>
 </body>
 </html>

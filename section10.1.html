@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1536">
     <title>Pixel | Тест</title>
     <link rel="stylesheet" href="CSS/style-section.css">
     <link rel="stylesheet" href="CSS/section11.css">
@@ -11,278 +11,284 @@
 <body>
     <script src="Script/scrollbar.js"></script>
     <script src="Script/quiz.js"></script>
-    <aside class="sidebar">
-        <nav>
-            <img src="IMG/logo-aside.svg" class="logo-aside">
-            <ul>
-                <li><a href="index.html"><img src="IMG/index.png">Главная</a></li>
-                <li><a href="section1.html"><img src="IMG/section1.png">Основы безопасности</a></li>
-                <li><a href="section2.html"><img src="IMG/section2.png">Пароли</a></li>
-                <li><a href="section3.html"><img src="IMG/section3.png">Двухфакторная аутентификация</a></li>
-                <li class="subsection"><a href="section3.1.html" class="subsection__link"><img src="IMG/section3.1.png">Instagram</a></li>
-                <li class="subsection"><a href="section3.2.html" class="subsection__link"><img src="IMG/section3.2.png">VK</a></li>
-                <li class="subsection"><a href="section3.3.html" class="subsection__link"><img src="IMG/section3.3.png">Telegram</a></li>
-                <li class="subsection"><a href="section3.4.html" class="subsection__link"><img src="IMG/section3.4.png">MAX</a></li>
-                <li><a href="section4.html"><img src="IMG/section4.png">Мошенничество</a></li>
-                <li><a href="section5.html"><img src="IMG/section5.png">Приватность</a></li>
-                <li><a href="section6.html"><img src="IMG/section6.png">Устройства</a></li>
-                <li><a href="section7.html"><img src="IMG/section7.png">Взлом аккаунта</a></li>
-                <li><a href="section8.html"><img src="IMG/section8.png">Ошибки</a></li>
-                <li><a href="section9.html"><img src="IMG/section9.png">Чек-листы</a></li>
-                <li><a href="section10.html" class="sidebar__active-link"><img src="IMG/section10.png">Тест</a></li>
-                <li><a href="section11.html"><img src="IMG/section11.png">Рекомендации</a></li>
-            </ul>
-            <a href="#" id="about_project">О проекте</a>
-        </nav>
-    </aside>
-    <main>
-        <div class="container">
-            
-            <div class="quiz-container">
-                <div class="quiz-card active" data-question="1">
-                    <div class="quiz-header">
-                        <span class="quiz-step">Вопрос 1 из 10</span>
-                        <div class="quiz-progress-wrapper">
-                            <div class="quiz-progress-bar" style="width: 10%;"></div>
+
+    <div id="page-wrapper">
+
+        <aside class="sidebar">
+            <nav>
+                <img src="IMG/logo-aside.svg" class="logo-aside">
+                <ul>
+                    <li><a href="index.html"><img src="IMG/index.png">Главная</a></li>
+                    <li><a href="section1.html"><img src="IMG/section1.png">Основы безопасности</a></li>
+                    <li><a href="section2.html"><img src="IMG/section2.png">Пароли</a></li>
+                    <li><a href="section3.html"><img src="IMG/section3.png">Двухфакторная аутентификация</a></li>
+                    <li class="subsection"><a href="section3.1.html" class="subsection__link"><img src="IMG/section3.1.png">Instagram</a></li>
+                    <li class="subsection"><a href="section3.2.html" class="subsection__link"><img src="IMG/section3.2.png">VK</a></li>
+                    <li class="subsection"><a href="section3.3.html" class="subsection__link"><img src="IMG/section3.3.png">Telegram</a></li>
+                    <li class="subsection"><a href="section3.4.html" class="subsection__link"><img src="IMG/section3.4.png">MAX</a></li>
+                    <li><a href="section4.html"><img src="IMG/section4.png">Мошенничество</a></li>
+                    <li><a href="section5.html"><img src="IMG/section5.png">Приватность</a></li>
+                    <li><a href="section6.html"><img src="IMG/section6.png">Устройства</a></li>
+                    <li><a href="section7.html"><img src="IMG/section7.png">Взлом аккаунта</a></li>
+                    <li><a href="section8.html"><img src="IMG/section8.png">Ошибки</a></li>
+                    <li><a href="section9.html"><img src="IMG/section9.png">Чек-листы</a></li>
+                    <li><a href="section10.html" class="sidebar__active-link"><img src="IMG/section10.png">Тест</a></li>
+                    <li><a href="section11.html"><img src="IMG/section11.png">Рекомендации</a></li>
+                </ul>
+                <a href="#" id="about_project">О проекте</a>
+            </nav>
+        </aside>
+        <main>
+            <div class="container">
+                
+                <div class="quiz-container">
+                    <div class="quiz-card active" data-question="1">
+                        <div class="quiz-header">
+                            <span class="quiz-step">Вопрос 1 из 10</span>
+                            <div class="quiz-progress-wrapper">
+                                <div class="quiz-progress-bar" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                        <p class="quiz-title">Что считается надёжным паролем?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q1" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">12345678</span></label>
+                            <label><input type="radio" name="q1" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">дата рождения</span></label>
+                            <label><input type="radio" name="q1" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">сложная комбинация букв, цифр и символов</span></label>
+                            <label><input type="radio" name="q1" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">имя пользователя</span></label>
+                        </div>
+                        <div class="quiz-footer">
+                            <a href="#" class="quiz-link next-btn">
+                                Следующий вопрос
+                                <img src="IMG/arrow-next.png" class="btn-icon">
+                            </a>
                         </div>
                     </div>
-                    <p class="quiz-title">Что считается надёжным паролем?</p>
-                    <div class="quiz-options">
-                        <label><input type="radio" name="q1" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">12345678</span></label>
-                        <label><input type="radio" name="q1" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">дата рождения</span></label>
-                        <label><input type="radio" name="q1" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">сложная комбинация букв, цифр и символов</span></label>
-                        <label><input type="radio" name="q1" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">имя пользователя</span></label>
+
+                    <div class="quiz-card" data-question="2">
+                        <div class="quiz-header">
+                            <span class="quiz-step">Вопрос 2 из 10</span>
+                            <div class="quiz-progress-wrapper">
+                                <div class="quiz-progress-bar" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                        <p class="quiz-title">Можно ли использовать один пароль для разных сайтов?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q2" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">да, это удобно</span></label>
+                            <label><input type="radio" name="q2" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">нет, это повышает риск взлома</span></label>
+                            <label><input type="radio" name="q2" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">можно только для социальных сетей</span></label>
+                            <label><input type="radio" name="q2" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">можно, если пароль длинный</span></label>
+                        </div>
+                        <div class="quiz-footer">
+                            <a href="#" class="quiz-link next-btn">
+                                Следующий вопрос
+                                <img src="IMG/arrow-next.png" class="btn-icon">
+                            </a>
+                        </div>
                     </div>
-                    <div class="quiz-footer">
-                        <a href="#" class="quiz-link next-btn">
-                            Следующий вопрос
-                            <img src="IMG/arrow-next.png" class="btn-icon">
-                        </a>
+
+                    <div class="quiz-card" data-question="3">
+                        <div class="quiz-header">
+                            <span class="quiz-step">Вопрос 3 из 10</span>
+                            <div class="quiz-progress-wrapper">
+                                <div class="quiz-progress-bar" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                        <p class="quiz-title">Что такое двухфакторная аутентификация (2FA)?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q3" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">резервное копирование данных</span></label>
+                            <label><input type="radio" name="q3" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">дополнительная защита аккаунта с помощью кода подтверждения</span></label>
+                            <label><input type="radio" name="q3" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">автоматическая смена пароля</span></label>
+                            <label><input type="radio" name="q3" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">скрытие профиля от других пользователей</span></label>
+                        </div>
+                        <div class="quiz-footer">
+                            <a href="#" class="quiz-link next-btn">
+                                Следующий вопрос
+                                <img src="IMG/arrow-next.png" class="btn-icon">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="quiz-card" data-question="4">
+                        <div class="quiz-header">
+                            <span class="quiz-step">Вопрос 4 из 10</span>
+                            <div class="quiz-progress-wrapper">
+                                <div class="quiz-progress-bar" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <p class="quiz-title">Что делать, если пришло сообщение «Это ты на фото?» со ссылкой?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q4" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">сразу открыть ссылку</span></label>
+                            <label><input type="radio" name="q4" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">скачать файл</span></label>
+                            <label><input type="radio" name="q4" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">проверить отправителя и не переходить по подозрительной ссылке</span></label>
+                            <label><input type="radio" name="q4" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">переслать сообщение друзьям</span></label>
+                        </div>
+                        <div class="quiz-footer">
+                            <a href="#" class="quiz-link next-btn">
+                                Следующий вопрос
+                                <img src="IMG/arrow-next.png" class="btn-icon">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="quiz-card" data-question="5">
+                        <div class="quiz-header">
+                            <span class="quiz-step">Вопрос 5 из 10</span>
+                            <div class="quiz-progress-wrapper">
+                                <div class="quiz-progress-bar" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <p class="quiz-title">Можно ли сообщать код подтверждения из SMS другим людям?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q5" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">можно друзьям</span></label>
+                            <label><input type="radio" name="q5" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">можно сотрудникам поддержки</span></label>
+                            <label><input type="radio" name="q5" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">нельзя никому</span></label>
+                            <label><input type="radio" name="q5" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">можно, если человек знакомый</span></label>
+                        </div>
+                        <div class="quiz-footer">
+                            <a href="#" class="quiz-link next-btn">
+                                Следующий вопрос
+                                <img src="IMG/arrow-next.png" class="btn-icon">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="quiz-card" data-question="6">
+                        <div class="quiz-header">
+                            <span class="quiz-step">Вопрос 6 из 10</span>
+                            <div class="quiz-progress-wrapper">
+                                <div class="quiz-progress-bar" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <p class="quiz-title">Для чего нужны настройки приватности?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q6" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">только для оформления профиля</span></label>
+                            <label><input type="radio" name="q6" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">для ограничения доступа к личной информации</span></label>
+                            <label><input type="radio" name="q6" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">для ускорения работы приложения</span></label>
+                            <label><input type="radio" name="q6" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">для увеличения количества подписчиков</span></label>
+                        </div>
+                        <div class="quiz-footer">
+                            <a href="#" class="quiz-link next-btn">
+                                Следующий вопрос
+                                <img src="IMG/arrow-next.png" class="btn-icon">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="quiz-card" data-question="7">
+                        <div class="quiz-header">
+                            <span class="quiz-step">Вопрос 7 из 10</span>
+                            <div class="quiz-progress-wrapper">
+                                <div class="quiz-progress-bar" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <p class="quiz-title">Чем опасны открытые профили?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q7" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">ничем не опасны</span></label>
+                            <label><input type="radio" name="q7" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">злоумышленники могут собирать личную информацию</span></label>
+                            <label><input type="radio" name="q7" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">уменьшается скорость интернета</span></label>
+                            <label><input type="radio" name="q7" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">невозможно получать сообщения</span></label>
+                        </div>
+                        <div class="quiz-footer">
+                            <a href="#" class="quiz-link next-btn">
+                                Следующий вопрос
+                                <img src="IMG/arrow-next.png" class="btn-icon">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="quiz-card" data-question="8">
+                        <div class="quiz-header">
+                            <span class="quiz-step">Вопрос 8 из 10</span>
+                            <div class="quiz-progress-wrapper">
+                                <div class="quiz-progress-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <p class="quiz-title">Почему важно обновлять приложения?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q8" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">только ради нового дизайна</span></label>
+                            <label><input type="radio" name="q8" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">обновления устраняют уязвимости безопасности</span></label>
+                            <label><input type="radio" name="q8" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">это влияет только на скорость работы</span></label>
+                            <label><input type="radio" name="q8" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">обновления не нужны</span></label>
+                        </div>
+                        <div class="quiz-footer">
+                            <a href="#" class="quiz-link next-btn">
+                                Следующий вопрос
+                                <img src="IMG/arrow-next.png" class="btn-icon">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="quiz-card" data-question="9">
+                        <div class="quiz-header">
+                            <span class="quiz-step">Вопрос 9 из 10</span>
+                            <div class="quiz-progress-wrapper">
+                                <div class="quiz-progress-bar" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <p class="quiz-title">Что нужно сделать после подозрения на взлом аккаунта?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q9" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">ничего не делать</span></label>
+                            <label><input type="radio" name="q9" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">сменить пароль и завершить активные сеансы</span></label>
+                            <label><input type="radio" name="q9" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">удалить приложение</span></label>
+                            <label><input type="radio" name="q9" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">создать новый аккаунт</span></label>
+                        </div>
+                        <div class="quiz-footer">
+                            <a href="#" class="quiz-link next-btn">
+                                Следующий вопрос
+                                <img src="IMG/arrow-next.png" class="btn-icon">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="quiz-card" data-question="10">
+                        <div class="quiz-header">
+                            <span class="quiz-step">Вопрос 10 из 10</span>
+                            <div class="quiz-progress-wrapper">
+                                <div class="quiz-progress-bar" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <p class="quiz-title">Какой способ входа наиболее безопасен?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q10" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">простой пароль без 2FA</span></label>
+                            <label><input type="radio" name="q10" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">одинаковый пароль для всех сервисов</span></label>
+                            <label><input type="radio" name="q10" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">уникальный пароль и включённая 2FA</span></label>
+                            <label><input type="radio" name="q10" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">вход через чужое устройство</span></label>
+                        </div>
+                        <div class="quiz-footer">
+                            <a href="#" class="quiz-link next-btn">
+                                Завершить
+                                <img src="IMG/arrow-next.png" class="btn-icon">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="quiz-result-card" id="quizResult">
+                        <div class="result-body">
+                            <div class="result-left">
+                                <img src="" alt="Результат" id="resultImage" class="result-img">
+                            </div>
+                            <div class="result-right">
+                                <div class="result-score" id="resultScore">0/10</div>
+                                <div class="result-status" id="resultStatus">Уровень безопасности</div>
+                            </div>
+                        </div>
+                        <div class="quiz-footer quiz-footer-no">
+                            <a href="section10.html" class="quiz-link restart-btn" id="restartBtn">
+                                Пройти заново
+                                <img src="IMG/again.png" class="btn-icon">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="quiz-card" data-question="2">
-                    <div class="quiz-header">
-                        <span class="quiz-step">Вопрос 2 из 10</span>
-                        <div class="quiz-progress-wrapper">
-                            <div class="quiz-progress-bar" style="width: 20%;"></div>
-                        </div>
-                    </div>
-                    <p class="quiz-title">Можно ли использовать один пароль для разных сайтов?</p>
-                    <div class="quiz-options">
-                        <label><input type="radio" name="q2" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">да, это удобно</span></label>
-                        <label><input type="radio" name="q2" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">нет, это повышает риск взлома</span></label>
-                        <label><input type="radio" name="q2" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">можно только для социальных сетей</span></label>
-                        <label><input type="radio" name="q2" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">можно, если пароль длинный</span></label>
-                    </div>
-                    <div class="quiz-footer">
-                        <a href="#" class="quiz-link next-btn">
-                            Следующий вопрос
-                            <img src="IMG/arrow-next.png" class="btn-icon">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="quiz-card" data-question="3">
-                    <div class="quiz-header">
-                        <span class="quiz-step">Вопрос 3 из 10</span>
-                        <div class="quiz-progress-wrapper">
-                            <div class="quiz-progress-bar" style="width: 30%;"></div>
-                        </div>
-                    </div>
-                    <p class="quiz-title">Что такое двухфакторная аутентификация (2FA)?</p>
-                    <div class="quiz-options">
-                        <label><input type="radio" name="q3" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">резервное копирование данных</span></label>
-                        <label><input type="radio" name="q3" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">дополнительная защита аккаунта с помощью кода подтверждения</span></label>
-                        <label><input type="radio" name="q3" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">автоматическая смена пароля</span></label>
-                        <label><input type="radio" name="q3" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">скрытие профиля от других пользователей</span></label>
-                    </div>
-                    <div class="quiz-footer">
-                        <a href="#" class="quiz-link next-btn">
-                            Следующий вопрос
-                            <img src="IMG/arrow-next.png" class="btn-icon">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="quiz-card" data-question="4">
-                    <div class="quiz-header">
-                        <span class="quiz-step">Вопрос 4 из 10</span>
-                        <div class="quiz-progress-wrapper">
-                            <div class="quiz-progress-bar" style="width: 40%;"></div>
-                        </div>
-                    </div>
-                    <p class="quiz-title">Что делать, если пришло сообщение «Это ты на фото?» со ссылкой?</p>
-                    <div class="quiz-options">
-                        <label><input type="radio" name="q4" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">сразу открыть ссылку</span></label>
-                        <label><input type="radio" name="q4" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">скачать файл</span></label>
-                        <label><input type="radio" name="q4" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">проверить отправителя и не переходить по подозрительной ссылке</span></label>
-                        <label><input type="radio" name="q4" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">переслать сообщение друзьям</span></label>
-                    </div>
-                    <div class="quiz-footer">
-                        <a href="#" class="quiz-link next-btn">
-                            Следующий вопрос
-                            <img src="IMG/arrow-next.png" class="btn-icon">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="quiz-card" data-question="5">
-                    <div class="quiz-header">
-                        <span class="quiz-step">Вопрос 5 из 10</span>
-                        <div class="quiz-progress-wrapper">
-                            <div class="quiz-progress-bar" style="width: 50%;"></div>
-                        </div>
-                    </div>
-                    <p class="quiz-title">Можно ли сообщать код подтверждения из SMS другим людям?</p>
-                    <div class="quiz-options">
-                        <label><input type="radio" name="q5" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">можно друзьям</span></label>
-                        <label><input type="radio" name="q5" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">можно сотрудникам поддержки</span></label>
-                        <label><input type="radio" name="q5" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">нельзя никому</span></label>
-                        <label><input type="radio" name="q5" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">можно, если человек знакомый</span></label>
-                    </div>
-                    <div class="quiz-footer">
-                        <a href="#" class="quiz-link next-btn">
-                            Следующий вопрос
-                            <img src="IMG/arrow-next.png" class="btn-icon">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="quiz-card" data-question="6">
-                    <div class="quiz-header">
-                        <span class="quiz-step">Вопрос 6 из 10</span>
-                        <div class="quiz-progress-wrapper">
-                            <div class="quiz-progress-bar" style="width: 60%;"></div>
-                        </div>
-                    </div>
-                    <p class="quiz-title">Для чего нужны настройки приватности?</p>
-                    <div class="quiz-options">
-                        <label><input type="radio" name="q6" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">только для оформления профиля</span></label>
-                        <label><input type="radio" name="q6" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">для ограничения доступа к личной информации</span></label>
-                        <label><input type="radio" name="q6" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">для ускорения работы приложения</span></label>
-                        <label><input type="radio" name="q6" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">для увеличения количества подписчиков</span></label>
-                    </div>
-                    <div class="quiz-footer">
-                        <a href="#" class="quiz-link next-btn">
-                            Следующий вопрос
-                            <img src="IMG/arrow-next.png" class="btn-icon">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="quiz-card" data-question="7">
-                    <div class="quiz-header">
-                        <span class="quiz-step">Вопрос 7 из 10</span>
-                        <div class="quiz-progress-wrapper">
-                            <div class="quiz-progress-bar" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <p class="quiz-title">Чем опасны открытые профили?</p>
-                    <div class="quiz-options">
-                        <label><input type="radio" name="q7" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">ничем не опасны</span></label>
-                        <label><input type="radio" name="q7" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">злоумышленники могут собирать личную информацию</span></label>
-                        <label><input type="radio" name="q7" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">уменьшается скорость интернета</span></label>
-                        <label><input type="radio" name="q7" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">невозможно получать сообщения</span></label>
-                    </div>
-                    <div class="quiz-footer">
-                        <a href="#" class="quiz-link next-btn">
-                            Следующий вопрос
-                            <img src="IMG/arrow-next.png" class="btn-icon">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="quiz-card" data-question="8">
-                    <div class="quiz-header">
-                        <span class="quiz-step">Вопрос 8 из 10</span>
-                        <div class="quiz-progress-wrapper">
-                            <div class="quiz-progress-bar" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <p class="quiz-title">Почему важно обновлять приложения?</p>
-                    <div class="quiz-options">
-                        <label><input type="radio" name="q8" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">только ради нового дизайна</span></label>
-                        <label><input type="radio" name="q8" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">обновления устраняют уязвимости безопасности</span></label>
-                        <label><input type="radio" name="q8" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">это влияет только на скорость работы</span></label>
-                        <label><input type="radio" name="q8" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">обновления не нужны</span></label>
-                    </div>
-                    <div class="quiz-footer">
-                        <a href="#" class="quiz-link next-btn">
-                            Следующий вопрос
-                            <img src="IMG/arrow-next.png" class="btn-icon">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="quiz-card" data-question="9">
-                    <div class="quiz-header">
-                        <span class="quiz-step">Вопрос 9 из 10</span>
-                        <div class="quiz-progress-wrapper">
-                            <div class="quiz-progress-bar" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <p class="quiz-title">Что нужно сделать после подозрения на взлом аккаунта?</p>
-                    <div class="quiz-options">
-                        <label><input type="radio" name="q9" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">ничего не делать</span></label>
-                        <label><input type="radio" name="q9" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">сменить пароль и завершить активные сеансы</span></label>
-                        <label><input type="radio" name="q9" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">удалить приложение</span></label>
-                        <label><input type="radio" name="q9" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">создать новый аккаунт</span></label>
-                    </div>
-                    <div class="quiz-footer">
-                        <a href="#" class="quiz-link next-btn">
-                            Следующий вопрос
-                            <img src="IMG/arrow-next.png" class="btn-icon">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="quiz-card" data-question="10">
-                    <div class="quiz-header">
-                        <span class="quiz-step">Вопрос 10 из 10</span>
-                        <div class="quiz-progress-wrapper">
-                            <div class="quiz-progress-bar" style="width: 100%;"></div>
-                        </div>
-                    </div>
-                    <p class="quiz-title">Какой способ входа наиболее безопасен?</p>
-                    <div class="quiz-options">
-                        <label><input type="radio" name="q10" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">простой пароль без 2FA</span></label>
-                        <label><input type="radio" name="q10" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">одинаковый пароль для всех сервисов</span></label>
-                        <label><input type="radio" name="q10" value="1" class="real-radio"><span class="custom-radio"></span><span class="radio-text">уникальный пароль и включённая 2FA</span></label>
-                        <label><input type="radio" name="q10" value="0" class="real-radio"><span class="custom-radio"></span><span class="radio-text">вход через чужое устройство</span></label>
-                    </div>
-                    <div class="quiz-footer">
-                        <a href="#" class="quiz-link next-btn">
-                            Завершить
-                            <img src="IMG/arrow-next.png" class="btn-icon">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="quiz-result-card" id="quizResult">
-                    <div class="result-body">
-                        <div class="result-left">
-                            <img src="" alt="Результат" id="resultImage" class="result-img">
-                        </div>
-                        <div class="result-right">
-                            <div class="result-score" id="resultScore">0/10</div>
-                            <div class="result-status" id="resultStatus">Уровень безопасности</div>
-                        </div>
-                    </div>
-                    <div class="quiz-footer quiz-footer-no">
-                        <a href="section10.html" class="quiz-link restart-btn" id="restartBtn">
-                            Пройти заново
-                            <img src="IMG/again.png" class="btn-icon">
-                        </a>
-                    </div>
-                </div>
             </div>
+            <div class="bottom__navigation">
+                <div class="link__bottom-l"><a href="section9.html" class="link-text__bottom-l"><img src="IMG/arrow-l.png"><div><span class="next">Назад: </span><span>Чек-листы</span></div></a></div>
+                <div class="link__bottom-r"><a href="section11.html" class="link-text__bottom-r"><div><span class="next">Далее: </span><span>Рекомендации</span></div><img src="IMG/arrow-r.png"></a></div>
+            </div>
+        </main>
 
-        </div>
-        <div class="bottom__navigation">
-            <div class="link__bottom-l"><a href="section9.html" class="link-text__bottom-l"><img src="IMG/arrow-l.png"><div><span class="next">Назад: </span><span>Чек-листы</span></div></a></div>
-            <div class="link__bottom-r"><a href="section11.html" class="link-text__bottom-r"><div><span class="next">Далее: </span><span>Рекомендации</span></div><img src="IMG/arrow-r.png"></a></div>
-        </div>
-    </main>
+    </div>
+    <script src="Script/scale.js"></script>
 </body>
 </html>
