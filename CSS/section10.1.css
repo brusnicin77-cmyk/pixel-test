@@ -1,0 +1,305 @@
+/* Основной контейнер теста */
+.quiz-container {
+    margin: 90px auto;
+    font-family: sans-serif;
+}
+
+/* Карточка вопроса (такой же градиент и рамка, как в чеклистах) */
+.quiz-card {
+    display: none; /* Все скрыты */
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    padding: 30px;
+    border-radius: 30px;
+    border: #6C55F7 solid 9px;
+    flex-direction: column;
+}
+
+/* Показываем активную карточку */
+.quiz-card.active {
+    display: flex;
+}
+
+/* Шапка: Шаг теста + Шкала */
+.quiz-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.quiz-step {
+    font-size: 19px;
+    color: #C7C1EB;
+    white-space: nowrap;
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 1) 7%, rgba(49, 57, 103, 1) 95%);
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+/* Прогресс-бар без внутренних процентов */
+.quiz-progress-wrapper {
+    flex-grow: 1;
+    height: 16px;
+    background: #C1E6FF;
+    background: radial-gradient(circle,rgba(193, 230, 255, 0.4) 22%, rgba(130, 169, 212, 0.4) 100%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.quiz-progress-bar {
+    height: 100%;
+    background: #00FF37;
+    background: radial-gradient(circle,rgba(0, 255, 55, 0.5) 20%, rgba(32, 197, 68, 0.5) 92%);
+    transition: width 0.3s ease;
+}
+
+/* Заголовок вопроса */
+.quiz-title {
+    color: #fff;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+/* Варианты ответа */
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz-options label {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 25px;
+    color: #C7C2EB;
+    line-height: 1.4;
+    cursor: pointer;
+    padding: 10px 8px;
+    transition: background 0.2s, border-radius 0.2s;
+}
+
+.quiz-options label:hover {
+    background: #453d73;
+    border-radius: 8px;
+}
+
+/* Скрываем нативное радио */
+.quiz-options .real-radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* КАСТОМНАЯ КРУГЛАЯ РАДИОКНОПКА */
+.custom-radio {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%; /* Превращаем в круг */
+    background-color: #C7C1EB;
+    border: #150A33 solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+/* Точка внутри круга */
+.custom-radio::before {
+    content: '';
+    display: block;
+    
+    /* Размеры галочки (можете немного изменить под себя) */
+    width: 23px;
+    height: 17px;
+    
+    /* Подключаем вашу картинку галочки */
+    background-image: url('../IMG/check-mark.png'); /* Проверьте путь и расширение файла! */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.real-radio:checked + .custom-radio::before {
+    opacity: 1;
+}
+
+/* Перечеркивание текста при выборе */
+.real-radio:checked ~ .radio-text {
+    transition: color 0.2s, text-decoration 0.2s;
+}
+
+/* НИЖНЯЯ ПАНЕЛЬ С ССЫЛКОЙ-КНОПКОЙ */
+.quiz-footer {
+    display: flex;
+    justify-content: flex-end; /* В правый нижний угол */
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* ОБНОВЛЕННЫЙ СТИЛЬ ССЫЛОК-КНОПОК (Без обводки, с поддержкой иконок) */
+.quiz-link {
+    display: inline-flex;  /* Flex-режим для выравнивания текста и картинки */
+    align-items: center;   /* Центрирование по вертикали */
+    gap: 10px;             /* Расстояние между текстом и иконкой */
+    text-decoration: none;
+    
+    /* Твой радиальный градиент */
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 1) 7%, rgba(49, 57, 103, 1) 95%);
+    
+    border: none;          /* УБРАЛИ ОБВОДКУ */
+    border-radius: 25px;
+    
+    /* Параметры текста по ТЗ */
+    color: #C7C1EB;
+    font-size: 19px;
+    padding: 10px 20px;    /* Немного скорректировал боковые отступы из-за иконки */
+    
+    transition: opacity 0.2s, transform 0.1s;
+}
+
+/* Стилизация картинок-иконок внутри кнопок */
+/*.quiz-link .btn-icon {
+    width: 20px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}*/
+
+/* Эффект наведения (так как рамки нет, сделаем кнопку чуть ярче за счет прозрачности) */
+.quiz-link:hover {
+    opacity: 0.9;
+}
+
+/* Эффект нажатия */
+.quiz-link:active {
+    transform: scale(0.97);
+}
+
+/* СТИЛИ ДЛЯ ПЛАГИНА РЕЗУЛЬТАТОВ */
+.quiz-result-card {
+    display: none; /* Включается в JS */
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    padding: 35px;
+    border-radius: 30px;
+    border: solid 9px transparent; /* Цвет рамки подставит JS */
+    flex-direction: column;
+    gap: 0px;
+}
+
+.result-body {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.result-left {
+    flex-shrink: 0;
+}
+
+.result-img {
+    /*width: 130px;
+    height: 130px;*/
+    object-fit: contain;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.result-right {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+}
+
+.result-score {
+    /* Прижимаем элемент к левому краю и запрещаем ему растягиваться на всю колонку */
+    align-self: flex-start; 
+    
+    /* Твой фирменный радиальный градиент */
+    background: #606CB1;
+    background: radial-gradient(circle, rgba(96, 108, 177, 0.4) 7%, rgba(49, 57, 103, 0.4) 95%);
+    
+    border: none;         /* Без обводки */
+    border-radius: 25px;  /* Скругление углов плашки */
+    padding: 20px 90px;    /* Внутренние отступы, чтобы фон аккуратно облегал цифры */
+    
+    /* Параметры шрифта */
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Базовые стили для текста статуса */
+.result-status {
+    font-size: 32px;
+    font-weight: bold;
+    /* Принудительно делаем весь текст строчным (маленькими буквами), 
+       чтобы подстраховаться от капса в JS */
+    text-transform: lowercase; 
+}
+
+/* Делаем заглавной только первую букву первого слова */
+.result-status::first-letter {
+    text-transform: uppercase;
+}
+
+.quiz-footer-no {
+    margin-top: 0px;
+}
+
+/* Режим просмотра ответов */
+.quiz-container.review-mode .real-radio {
+    pointer-events: none; /* Запрещаем клики */
+}
+
+.quiz-container.review-mode label {
+    pointer-events: none; /* Отключаем ховеры и клики на строки */
+}
+
+/* Подсветка правильного ответа (где value="1") */
+.quiz-container.review-mode .real-radio[value="1"] ~ .radio-text {
+    color: #50C23D !important;
+    font-weight: bold;
+}
+
+/* Подсветка кастомной радиокнопки для правильного ответа */
+.quiz-container.review-mode .real-radio[value="1"] + .custom-radio {
+    border-color: #50C23D !important;
+    background-color: rgba(80, 194, 61, 0.2) !important;
+}
+
+/* Подсветка НЕПРАВИЛЬНОГО ответа, если пользователь его выбрал */
+.quiz-container.review-mode .real-radio[value="0"]:checked ~ .radio-text {
+    color: #ED5762 !important;
+    text-decoration: line-through; /* Визуально зачеркиваем ошибку */
+}
+
+.quiz-container.review-mode .real-radio[value="0"]:checked + .custom-radio {
+    border-color: #ED5762 !important;
+    background-color: rgba(237, 87, 98, 0.2) !important;
+}
+
+/* Показываем ВСЕ карточки в режиме просмотра */
+.quiz-container.review-mode .quiz-card {
+    display: flex !important;
+    margin-bottom: 30px;
+}
+
+/* Скрываем кнопки навигации "Следующий вопрос" в режиме просмотра */
+.quiz-container.review-mode .quiz-footer {
+    display: none;
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=1536">
     <title>Pixel | Тест</title>
     <link rel="stylesheet" href="CSS/style-section.css">
-    <link rel="stylesheet" href="CSS/section11.css">
+    <link rel="stylesheet" href="CSS/section10.1.css">
     <link rel="shortcut icon" href="IMG/favicon.svg" type="image/x-icon">
 </head>
 <body>
@@ -35,7 +35,6 @@
                     <li><a href="section10.html" class="sidebar__active-link"><img src="IMG/section10.png">Тест</a></li>
                     <li><a href="section11.html"><img src="IMG/section11.png">Рекомендации</a></li>
                 </ul>
-                <a href="#" id="about_project">О проекте</a>
             </nav>
         </aside>
         <main>
@@ -272,7 +271,14 @@
                                 <div class="result-status" id="resultStatus">Уровень безопасности</div>
                             </div>
                         </div>
-                        <div class="quiz-footer quiz-footer-no">
+                        <!-- Добавляем общую панель для кнопок -->
+                        <div class="quiz-footer quiz-footer-no" style="justify-content: space-between; gap: 20px; margin-top: 30px;">
+                            <!-- Новая кнопка просмотра ответов -->
+                            <a href="#" class="quiz-link review-btn" id="reviewBtn">
+                                Посмотреть ответы
+                                <img src="IMG/arrow-next.png" class="btn-icon" style="transform: rotate(90deg);">
+                            </a>
+                            
                             <a href="section10.html" class="quiz-link restart-btn" id="restartBtn">
                                 Пройти заново
                                 <img src="IMG/again.png" class="btn-icon">

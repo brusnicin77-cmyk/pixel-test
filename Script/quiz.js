@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const quizContainer = document.querySelector('.quiz-container');
     const cards = document.querySelectorAll('.quiz-card');
     const resultCard = document.getElementById('quizResult');
     const resultImage = document.getElementById('resultImage');
     const resultScore = document.getElementById('resultScore');
     const resultStatus = document.getElementById('resultStatus');
-    const restartBtn = document.getElementById('restartBtn');
+    const reviewBtn = document.getElementById('reviewBtn');
     
     let currentStep = 0;
 
     // Находим кнопки "Следующий вопрос" и "Завершить"
-    const nextButtons = document.querySelectorAll('.quiz-container .quiz-link:not(#restartBtn)');
+    const nextButtons = document.querySelectorAll('.quiz-container .quiz-link:not(#restartBtn):not(#reviewBtn)');
 
     nextButtons.forEach(btn => {
         btn.addEventListener('click', (event) => {
@@ -78,29 +79,20 @@ document.addEventListener('DOMContentLoaded', () => {
         resultCard.style.display = 'flex';
     }
 
-    // ЛОГИКА ДЛЯ ССЫЛКИ "ПРОЙТИ ЗАНОВО"
-    //restartBtn.addEventListener('click', (event) => {
-        //event.preventDefault();
+    // ЛОГИКА ДЛЯ КНОПКИ "ПОСМОТРЕТЬ ОТВЕТЫ"
+    reviewBtn.addEventListener('click', (event) => {
+        event.preventDefault();
 
-        //Очищаем все выбранные радиокнопки
-        //const allRadios = document.querySelectorAll('.quiz-container .real-radio');
-        //allRadios.forEach(radio => {
-            //radio.checked = false;
-        //});
+        // Включаем CSS-режим просмотра ответов
+        quizContainer.classList.add('review-mode');
 
-        //Прячем плагин результатов
-        //resultCard.style.display = 'none';
+        // Перемещаем карточку результатов на самый верх (над вопросами), чтобы пользователь её видел
+        quizContainer.prepend(resultCard);
 
-        //Сбрасываем шаги на начало
-        //currentStep = 0;
-
-        //Делаем первый вопрос активным, остальные скрываем
-        //cards.forEach((card, index) => {
-            //if (index === 0) {
-                //card.classList.add('active');
-            //} else {
-                //card.classList.remove('active');
-            //}
-        //});
-    //});
+        // Прокручиваем страницу к началу теста, чтобы просмотр начинался сверху
+        resultCard.scrollIntoView({ behavior: 'smooth' });
+        
+        // Скрываем саму кнопку просмотра, оставляя только "Пройти заново"
+        reviewBtn.style.display = 'none';
+    });
 });

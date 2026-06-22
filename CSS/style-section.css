@@ -118,7 +118,6 @@ main {
     flex-grow: 1;            /* ДОБАВЛЕНО: чтобы main занимал всё оставшееся пространство */
 }
 
-/* Стилизация скроллбара для основной области (опционально) */
 main::-webkit-scrollbar {
     width: 14px;
 }
@@ -139,10 +138,6 @@ main::-webkit-scrollbar-thumb {
     padding-bottom: 100px;
 }
 
-.container__1 {
-    margin: 0 150px 0 50px;
-}
-
 .title__container {
     margin-top: 0;
     padding-top: 90px;
@@ -161,28 +156,13 @@ main::-webkit-scrollbar-thumb {
     margin-top: 60px;
 }
 
-.title__container__mini {
-    margin-top: 0;
-    padding-top: 50px;
-    margin-bottom: 20px;
-    font-size: 25px;
-}
-
-.list {
-    margin-left: 30px;
-}
-
-#list__mini {
-    margin-left: 30px;
-}
-
-#about_project {
+/*#about_project {
     display: block;
     text-align: center;
     color: #3D5AFA;
     margin-top: 50px;
     text-decoration: none;
-}
+}*/
 
 .button-quiz-link{
     text-decoration: none;
@@ -254,10 +234,10 @@ main::-webkit-scrollbar-thumb {
 }
 
 img {
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* IE/Edge */
-  user-select: none;         /* Стандартный синтаксис */
-  -webkit-user-drag: none;   /* Safari */
-  pointer-events: none;      /* Отключает клики и наведение (опционально) */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
